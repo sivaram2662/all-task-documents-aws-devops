@@ -4,7 +4,52 @@ one ec2 mechine same application running to change port path is apche path ----c
                                                                                 vi httpd.conf
                                                                 nginx path --cd /etc/nginx/nginx.conf
                                                                  
-                                                                tomcat path ---cd /etc/tomcat/conf/service.xml                                                               
+                                                                tomcat path ---cd /etc/tomcat/conf/service.xml 
+                                                                 
+                                                                jenkins path ---cd /etc/sysconfig/jenkins
+
+apache default path-------/var/www/html/index.html 
+nginx default--------/usr/share/nginx/html
+jenkins default------/opt/lib/jenkins/secrets
+
+tomact default path -----/opt/
+
+
+SSM-AJENT USER-DATA
+===================
+sudo yum install telnet -y
+sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+sudo systemctl start amazon-ssm-agent
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+
+
+SSM-AJENT USER-DATA--ubuntu-server
+==================================
+
+#!/bin/bash
+sudo apt-get update
+sudo snap install amazon-ssm-agent --classic
+sudo systemctl start snap.amazon-ssm-agent.amazon-ssm-agent.service
+sudo systemctl enable snap.amazon-ssm-agent.amazon-ssm-agent.service
+sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service
+
+
+
+SSM-AJENT include apache  USER-DATA
+===================================
+sudo yum install telnet -y
+sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+sudo systemctl start amazon-ssm-agent
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+
+USER DATA APACHE:
+=================
+                                                              
 #!/bin/bash
 sudo yum install httpd -y
 sudo systemctl start httpd
