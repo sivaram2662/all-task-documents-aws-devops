@@ -55,8 +55,8 @@ sudo apt install apache2 -y
 
 
 
-IN UBUNTU SERVER MYSQL _INSTALATION:
-===================================
+IN UBUNTU SERVER MYSQL _INSTALATION AND WORDPRESS
+=================================================
 #!/bin/bash
 sudo apt-get update -y
 sudo apt-get install apache2 -y
