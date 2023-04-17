@@ -13,7 +13,7 @@ how to create postgres rds step -by -step
 
 select the postgresql-------to select the version also -----to select the Templates  free tier ---Availability and durability d---------------------
 
--------Master username you have change  the name --------password -----confirm password -----Public access [Yes]----------in vpc ----to select the Choose 
+-------Master username you have change  the name --------password -----confirm password -----Public access [NO]----------in vpc ----to select the Choose 
 
 existing---to attach the rds sg -----now to create the database.  
 
