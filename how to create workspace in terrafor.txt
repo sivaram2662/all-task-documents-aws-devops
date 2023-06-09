@@ -21,9 +21,7 @@ a.k
 s.k
 region
 
-
 Default region name
-
 
 export AWS_ACCESS_KEY_ID=AKIAVKKUTI7MVBTJTJNY
 export AWS_SECRET_ACCESS_KEY=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
