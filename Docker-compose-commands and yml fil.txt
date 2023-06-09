@@ -14,11 +14,19 @@ First we have to install in server
         
          --------> docker-compose version
 
+docker login 
+docker-compose build
+docker-compose <file> up -d
+docker-compose <file> ps 
+docker-compose <file> images
 
-Docker file  --static-jqury-template
-======================================
 
-FROM ubuntu:latest
+Docker file 
+===========
+
+ARG TAG=latest
+ENV PASSWORD=dummy
+FROM ubuntu:${TAG}
 RUN apt update \
    && apt install -y apache2 zip \
    && apt install -y apache2-utils \
@@ -30,13 +38,6 @@ RUN cd /tmp \
 # COPY grandcoffee.zip /tmp/
 EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
-
-
-Docker file --httpd
-==================
-
-FROM httpd
-COPY index.html /usr/local/apache2/htdocs
 
 
 
