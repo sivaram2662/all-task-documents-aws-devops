@@ -44,3 +44,22 @@ func main() {
 after to the excute to the command ------go run app.go
 
 then we will copy to the pubilc ip and search to browser :3000 ip then it will come output page .
+
+
+golang-code CICD FLOW
+=========================
+
+ci_golang.sh
+=============
+#!/bin/bash
+rm -rf example-code
+git clone git@github.com:sivaram2662/example-code.git
+cd example-code
+aws s3 cp webapp.go s3://staqtic-bucket-name-golang/
+
+
+cd_golang.sh
+============
+#!/bin/bash
+aws s3 cp s3://staqtic-bucket-name-golang/webapp.go .
+go run webapp.go

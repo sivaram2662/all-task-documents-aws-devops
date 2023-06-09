@@ -18,9 +18,9 @@ pipeline {
         }
     }
 }
-
+#!/bin/bash
 rm -rf example-code
 git clone git@github.com:sivaram2662/example-code.git
 cd example-code
-tar -xvzf static-1.zip *
-aws s3 cp static-1.zip s3://static-name-bucket/
+tar -xvzf static-1.tgz *
+aws s3 cp static-1.tgz s3://static-name-bucket/

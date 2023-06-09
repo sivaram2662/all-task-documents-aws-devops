@@ -155,6 +155,14 @@ rm -f shoppingcart.zip
 
 
 
+==================================================================================================================================================
+
+sed -i '/scrape_configs:/a \- job_name: "node-exporter"\n  scrape_interval: 5s\n  static_configs:\n  - targets: ["10.0.0.10:9100"]' /path/to/prometheus.yml
+
+
+sed -i '/scrape_configs:/a \- job_name: "node-exporter"\n  scrape_interval: 5s\n  static_configs:\n   - targets: ["${aws_instance.jenkins.private_ip}:9100"]'  /prometheus-2.39.1.linux-amd64/prometheus.yml
+
+
 
 
 

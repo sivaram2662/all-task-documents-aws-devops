@@ -1,4 +1,0 @@
-task 
-====
-eks version upgrade 1.21 to 1.22 and 1.22 to 1.23
-
