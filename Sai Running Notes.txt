@@ -1,0 +1,211 @@
+Sai Running Notes
+=================
+Day -1
+======
+sg
+====
+ipv4 ----o.o.o.o---255.255.255.255
+
+ipv6 alphanumirical ---ab@784ggshfdh
+
+publiip---remains ip are called as publicips
+
+privateip--10,172,192---it will acess to the private zones restrited to the application.
+
+instance type
+t,m,c,r
+Ebs--elastic block storage 
+
+object storage- we can only install to the static content like that : images ,videos 
+ 
+block storage ---we have install any os on top block storage for example: ami ,ubuntu,windows
+
+Ebs types :
+===========
+General purpose(gp2)
+gerneral purpose(gp3)---latest version
+provision ipos(very cost )
+magntic
+throught output
+
+apt ---ubuntu--os 
+apt update-y
+apt install apche2 -y
+sytemctl start apche2
+syatemctl enable apche2
+apche --web application
+
+yum ---linux --os
+
+
+ports:
+=======
+ssh---secure shell ---22
+http-hyer text transfer protocal---80 
+https---443
+apche-80---one ec2      one server
+nginx-80---one more ec2
+
+jenkins -8080
+tomcat --8080
+
+
+apche or nginx ---in both application install one server vm one ec2
+apche port 
+
+
+when where you have to create ec2 mechine os is ami --ec2-user
+ubuntu:ubuntu
+
+
+one ec2 mechine 3 ways connect the server
+========================================
+
+1)username passwd
+
+2) a.k and s.k
+
+3) ssh cllient
+
+
+ssh -i "terraform.pem" ec2-user@ec2-3-84-114-93.compute-1.amazonaws.com
+
+ssh -i terraform.pem ec2-user@3.84.114.93
+
+ exit
+    2  sudo su
+    3  exit
+    4  sudo su -
+    5  exit
+    6  pwd
+    7  exit
+    8  pwd
+    9  sudo su -
+   10  exit
+   11  hostnamectl -set-hostname sai
+   12  hostnamectl set-hostname sai
+   13  eixt
+   14  exit
+   15  yum update -y
+   16  yum install nginx -y
+   17  systemctl start nginx
+   18  systemctl enable nginx
+   19  systemctl status nginx
+   20  systemctl stop nginx
+   21  systemctl status nginx
+   22  systemctl start nginx
+   23  systemctl status nginx
+   24  ps -ef | grep nginx
+   25  history
+
+
+Day -2
+=======
+
+
+
+previous review 
+===============
+how tocreate ec2 
+port numbers
+sg
+ebs---
+keypair 
+vpc
+ami
+----
+aplication
+=========
+apache---80
+ubuntu---80
+nginx---80
+jenkins--8080
+tomcat---8080
+
+------------
+web application 
+
+==============
+
+apache----ami ,instance type,keypair,sg----
+
+apche ---it works ----design page ---web application
+
+
+ami---os ---linux 
+==================
+yum update -y 
+yum install httpd -y 
+systemctl start httpd --apache 
+systemctl enable httpd ---apache
+wget https://www.free-css.com/assets/files/free-css-templates/download/page294/primecare.zip
+unzip primecare.zip
+cp -r * /var/www/html 
+
+apache default path --- /var/www/html
+
+
+
+
+wget ----get the url to download to the pkg
+ 
+ami---ubuntu ---os
+==================
+apt update -y 
+apt install apache2 -y 
+systemctl start apache2
+systemctl enable apache2
+
+
+
+
+==================================
+----- nginx /usr/share/nginx ---default path nginx
+
+
+
+path based  ---/sai /siva
+host based ---google.com,amzon.com
+
+
+
+Task :
+======
+1) Deploy to the nginx web appliction.
+2) To connect to the server yes or not given to the server to automatically connect to the ec2-user. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

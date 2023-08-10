@@ -1,0 +1,14 @@
+How to install ansible in server:
+=================================
+to refer the links : https://adamtheautomator.com/install-ansible/
+
+In server to install the commands :
+==================================
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+
+python3 -m pip install --user ansible
+
+ansible-config init --disabled > .ansible.cfg
+
+

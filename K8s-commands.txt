@@ -56,3 +56,6 @@ to check label is create or not  command
    
     kubectl get nodes --show-label 
 
+
+
+kubectl get deploy -o yaml -n ingress-nginx | grep -i class

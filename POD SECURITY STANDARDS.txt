@@ -1,0 +1,58 @@
+admission controllers list
+==========================
+podsecurity(podsecurirypolicy)
+
+---> cluster level gobal resources (not namespaced)
+
+--->controls security sensitive aspects of the pod specification 
+
+----> set of the conditions that a pod must run + defaults for the related fields.
+
+-----> admins will be configure psp in cluster
+
+-----> must be enable at kubeapi server level before using it 
+
+------> podsecuritypolicy -can be authored using BBAC
+
+
+commands:
+=========
+k api-resources
+
+policy levels:
+==============
+ 
+          1) Privileged: 
+                     ----->Unrestricted policy, widely open. This policy allows for known privilege escalations.
+                     ----->For system and infrstructure-level workloads managed by the priviledge ,trusted users.
+          2) baseline :
+                    ----> Allows the default (minimally specified ) pod configuration preventing known privilege escalations.
+                    ----> for application operators and developers of non-critical applications.
+
+          3) Restricted : 
+                    ----> Heavily restricted policy ,following current pod hardening best practice.
+                    ----> for operates and developers of security-critical applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POD SECURITY STANDARDS && Pod Security Admission
+================================================
+---->pod security standards define three different policies to broadly cover the security spectrum.
+
+---->These policies are cumulative and range from highly-permissive to highly-restrictive.
+
+policy levels:
+==============
+ 
+          1) Privileged: 

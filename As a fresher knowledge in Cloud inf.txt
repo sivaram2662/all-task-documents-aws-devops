@@ -1,0 +1,29 @@
+As a fresher knowledge in Cloud infrastructure & CI-CD management, Automation, Scripting, Containerization, and Monitoring applications & services, while ensuring the highest level of Infrastructure & Deployment Availability. 
+
+
+Skills:-
+=======
+Cloud Technologies: AWS (AWS (EC2, S3, EBS, VPC, ELB, SNS, AMI, IAM,
+EKS, ECR, Route 53, etc..,.)
+Version Tools: GIT, GitHub & Gitlab
+CICD Tools: Jenkins, Gitlab
+Artifact Repository: S3,Nexus
+Config Management/Build tools: Maven ,Ansible
+Application Servers: Apache,Tomcat,Nexus
+Coding/Scripting: Python,Shell Scripting, Golang
+Database: MySQL,Postgres
+operating Systems: Linux,Window
+Containerization: Docker
+Orchestration: Kubernetes (K8s)
+OE Tools: Grafana & Prometheus and ELK 
+
+
+Hands on experiences with AWS services like EC2, VPC, S3, IAM, RDS, AUTO 
+SCALING, ROUTE53, Cloud front Lambda, Cloud watch, ECR Cloud trail SNS. 
+Working on Amazon EC2 cloud deployments using DevOps tools like maven,
+Jenkins. Working on the Source code Management tool (SCM) Github. Having good 
+Knowledge of Docker and Kubernetes. Hands-on experience in the creation of 
+cluster. Hands-on experience in the Installation of Monitoring Tools Like 
+Prometheus, Grafana and Elastic search, Kibana
+Hands on experience CICD tools on Jenkins and Gitlab
+

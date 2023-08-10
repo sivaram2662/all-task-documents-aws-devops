@@ -1,27 +1,91 @@
-first we have create to the one ec2 mechine after we have install this commands 
+gitlab-instalation-on-top-ec2
+==============================
 
-sudo apt update
+------>first we have create to the ubuntu ec2 mechine after we have install this commands 
+
+sudo apt update -y 
 sudo apt upgrade -y
 sudo apt install -y curl openssh-server ca-certificates postfix
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 sudo EXTERNAL_URL="http://your_domain_or_ip_address" apt install gitlab-ee
                       (or)
-sudo EXTERNAL_URL="http://35.91.10.23" apt install gitlab-ee
+sudo EXTERNAL_URL="http://44.203.92.115" apt install gitlab-ee
 
 
+install to the runner commands
+==============================
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 sudo apt-get install gitlab-runner
 gitlab-runner --version
-sudo gitlab-runner start
-sudo systemctl enable gitlab-runner
 
---------------------------
+
+
+
+In server to run the command and set up passwd 
+==============================================
 cat /etc/os-release
 gitlab-rails console -e production
 u = User.where(id:1).first
 u.password = 'Siva@!%^2662*'
 u.password_confirmation = 'Siva@!%^2662*'
 u.save!
+
+
+
+
+ gitlab ---to select to the -----> main menu --------> ci/cd -----> Runner-----> new instance runner ---> select Linux ----> Runner Name---> configuration to select the --Run untagged jobs  ----submet 
+
+Copy and paste the following command into your command line to register the runner.
+
+example commands :
+===================
+--->gitlab-runner register  --url http://54.83.109.139  --token glrt-8iH5mdqE4_jFvkqETzus
+
+---> gitlab-runner run
+
+
+
+
+
+
+
+
+
+Download gitlab-runner in your local
+=====================================
+this link follow that: https://docs.gitlab.com/runner/install/windows.html
+
+cd C:\GitLab-Runner
+.\gitlab-runner.exe install
+.\gitlab-runner.exe start
+
+
+
+.\gitlab-runner-windows-amd64.exe register  --url https://gitlab.com  --token glrt-UWbqBApy8NmxZYKQx28Z
+
+.\gitlab-runner-windows-amd64.exe run
+
+
+
+
+helm install in runner
+======================
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+
+
+
+
+
+
+
+========================================================================================================================================================================================================================================================================================================================
+
+
+
 
 
 
@@ -33,3 +97,64 @@ https://docs.gitlab.com/runner/install/linux-repository.html
 https://docs.gitlab.com/runner/register/index.html
 https://medium.com/hackernoon/tutorial-guide-installing-gitlab-gitlab-ci-on-aws-ec2-from-zero-751927e5ae5
 https://youtu.be/W_dcvCaLFpM
+https://www.youtube.com/watch?v=p9I9Hh9hkmE
+https://www.youtube.com/watch?v=aA4S3Fl45jo
+https://www.youtube.com/watch?v=DGvPEJUnXME
+https://www.youtube.com/watch?v=LENI2YdKbuM
+https://about.gitlab.com/blog/2020/03/09/gitlab-eks-integration-how-to/#:~:text=Access%20GitLab%20Kubernetes%20Integration%20Page,new%20cluster%20on%20EKS%E2%80%9D%20tab.
+
+https://www.youtube.com/watch?v=oD_lkTsJces
+
+https://gitlab.com/ramkrishna70/ionic-template
+
+connect to the cluster : https://www.youtube.com/watch?v=LENI2YdKbuM
+
+https://www.youtube.com/watch?v=2l7F6yHDGyk
+
+https://www.youtube.com/watch?v=2l7F6yHDGyk
+
+https://docs.gitlab.com/runner/install/windows.html
+
+https://www.youtube.com/watch?v=p9I9Hh9hkmE
+
+
+ Docker install :https://www.youtube.com/watch?v=4UaF4M1ZEOk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

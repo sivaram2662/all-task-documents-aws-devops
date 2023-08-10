@@ -1,0 +1,40 @@
+LAMBDA
+=============
+
+----> Lambda is a event-driven, serverless computing platform provide by amazon as a part of Amazon,as a part of Amazon web services.
+----> particular task working purpose using lambda.
+----> Lambda will supports ,python,java,c etc.
+----> s3,cloudwatch ,Api Gateway, Dynamodb etc,these service are trigged to the lambda
+-----> In lambda to create the function running & function consume memory we need to pay money .
+
+Lambda benefits
+===============
+1) no servers to manage
+
+2) continuous scaling
+
+
+
+aws elastic beanstack
+=====================
+
+-----> aws elastic benstalk is to use service for deploy and scale web application and services.
+
+---->  It will supports programming language like java,python,ruby,docker etc .
+
+advantages:
+===========
+
+1) High scalable and flexible 
+
+2) fast and simple to being
+
+3) offers quickly deployment 
+
+4) cost efficient 
+
+5) complete resource control 
+
+
+
+ .
