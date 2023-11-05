@@ -1,0 +1,99 @@
+Write a shell script to monitor docker containers. if the containers exits, it has to run automatically
+
+Ans:
+#!/bin/bash
+
+CONTAINER_NAME="your-container-name"
+
+while true; do
+if ! docker inspect -f '{{.State.Running}}' "$CONTAINER_NAME" > /dev/null; then
+echo "Container $CONTAINER_NAME is not running. Restarting..."
+docker restart "$CONTAINER_NAME"
+fi
+sleep 10
+done
+
+
+===========================================================
+
+interviewer: write a shell script to count the string "r" in the word "terraform".
+
+
+Ans:
+
+#!/bin/bash
+
+input="terraform"
+char="r"
+count=$(echo "$input" | grep -o "$char" | wc -l)
+
+echo "The letter '$char' appears $count times in '$input'."
+
+
+=================================================================
+
+Topic: Shell Scripting
+
+Interviewer: Write a shell script that's prompt the username and password from users. The username and password should contain only alphanumeric characters. If not, it should display an error message and exit
+
+
+Ans:
+
+#!/bin/bash
+
+# prompt the user for a username
+read -p "Enter a username: " USERNAME
+
+# prompt the user for a password
+read -sp "Enter a password: " PASSWORD
+echo ""
+
+# check if the username contains only alphanumeric characters
+if ! [[ "$USERNAME" =~ ^[[:alnum:]]+$ ]]; then
+echo "Username must contain only alphanumeric characters."
+exit 1
+fi
+
+# check if the password contains only alphanumeric characters
+if ! [[ "$PASSWORD" =~ ^[[:alnum:]]+$ ]]; then
+echo "Password must contain only alphanumeric characters."
+exit 1
+fi
+
+
+===============================================================
+
+Topic : Shell Scripting
+
+Interviewer: Write a shell script to create a random password of a specified length of 16.
+
+Ans :
+
+#!/bin/bash
+PASSWORD_LENGTH=16
+PASSWORD=$(openssl rand -base64 48 | tr -d /=+ | cut -c1-$PASSWORD_LENGTH)
+echo "Random Password: $PASSWORD"
+
+
+==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

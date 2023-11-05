@@ -1,0 +1,250 @@
+ARG TAG:Latest
+FROM ubuntu:${TAG}
+RUN apt update -y \
+    && apt install apche2 \
+    && apt clean
+EXPOSE 80 
+CMD["apche2ctl", "-D", "FOREGROUND"]
+
+ARG TAG=LATEST
+FROM ubuntu:${TAG}
+RUN apt update -y \
+    && apt install apche2 \
+    && apt clean
+ADD wget <url> /tmp/ 
+RUN cd /tmp \
+    && unzip /tmp/filename\
+    && cp -r /tmp/html/* /var/www/html/
+EXPOSE 80 
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+Docker login 
+Docker-compose up -d 
+docker-compose ps 
+
+
+
+Docker-compose.yml
+==================
+version
+service
+  apache:
+    build:
+      context:.
+      dockerfile:
+    ports:
+     - "8002:80"
+
+
+
+
+Docker-compose.yml
+==================
+version:
+services:
+  apache:
+    build:
+      context:.
+      dockerfile:
+    ports:
+     - "8002:80"
+
+
+FROM centos 
+RUN yum install java -y \
+    && wget <http://tomcatlurl \
+    && unzip file
+    && mv tomcat name <smallname
+    && chmod -R 755 tomcat flodername
+cmd ["/opt/tomcat/bin/startup.sh"]
+
+
+docker path /var/lib/docker to run the multuipule images by using single command by usginslim images 
+
+
+Docker netwoirk list 
+
+bridge 
+overlay
+none
+host
+maclan
+
+multistage-Dockerfile
+======================
+
+one docker file to run the multipule images by using multistage docker file 
+
+java appluication
+
+From maven ad bild 
+workdir /app
+copy . /app 
+
+From Tomcat 
+COPY --From=build /app/target/file.war/usr/local/tomcat/webapps
+
+
+
+From node:alpine AS build-stage
+workdir /app
+copy package.json
+run npm install 
+
+FROm nginx
+copy --from=buld-stage /app/build/usr/share/nginx/html
+
+
+
+
+
+pipeline {
+
+agent any 
+stages{
+
+  stage(checkout){
+steps{
+     git url "
+}
+
+
+}
+  stage(ci){
+steps{
+     git url "
+}
+
+}
+
+
+
+yml file 
+=======
+
+apiversion:
+kind
+metadata
+name:
+spec:
+  replicas:
+  selector:
+  matchlabels"
+  app:
+ spc:
+containers:
+name:
+image:
+ports:
+containerport
+envfrom:
+ configmapref
+ name:
+-secretRef:
+ name:
+
+
+ansible -one of configaration managent tool 
+
+ansible -- module yum,service,urachrive,command,package,
+ 
+
+
+get_url 
+
+
+
+name:
+hosts:
+tasks:
+name:
+yum:
+name:
+state:
+name:
+service:
+name:
+state
+name:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

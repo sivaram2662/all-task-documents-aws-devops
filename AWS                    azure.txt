@@ -1,0 +1,21 @@
+AWS                    azure
+EC2                    vm                         ------yes
+AWS Lambda             azure Function--------------------yes
+aws eks                azure kubernetes services---------yes
+aws RDS                azure sql Databases---------------yes
+aws s3                 azure blob storage----------------yes
+aws cloudfront         Azure Content delivery network----yes 
+aws vpc                azure virtual network-------------yes
+aws ELB                azure load balancer----------------yes
+aws IAM                azure active Directory-------------yes
+aws cloudwatch         azure monitor----------------------yes
+aws EBS                azure Managed storage--------------yes
+aws Route 53           azure Traffic Manager--------------yes
+aws cloutrail          azure operational insights---------yes
+aws cloudwatch         azure application insights---------yes
+aws autoscalling       azure autoscale--------------------yes
+aws cloudformation     azure resource manager-------------yes
+aws simple notification 
+system                 azure notification hub-------------yes
+
+I have good knowledge on Azure cloud in azure services virtual machine,Bbb storage,Managed storage,CDN,sql databases,virtual Networks,Traffic manager, Application insights, operational insights,Azure Active Directory,Load balancing.

@@ -169,7 +169,7 @@ host based ---google.com,amzon.com
 
 
 
-Task :
+Task : 
 ======
 1) Deploy to the nginx web appliction.
 2) To connect to the server yes or not given to the server to automatically connect to the ec2-user. 
@@ -186,6 +186,158 @@ Task :
 
 
 
+
+
+
+==========================================================================
+
+
+aws(amazon wd services)---it is one cloud flatform 
+
+
+many cloud are there ---azure cloud ,gcp,huawei cloud,aws 
+
+
+
+aws(amazon web aervice)
+
+basic of aws 
+
+
+core ---hardware,infrastructure,resource,
+
+compute,storage,network,security,
+
+
+compute------how much cpu how ram 
+
+storage ---wrere are the store the data location,ebs,s3
+
+network --- public ip and private ip vpc 
+
+security --- security group/waf
+
+
+Laptop[Hardware] ----os{kernal}----application-----user
+phone ---------phone how to communicate 
+
+hardware -----Ime-----os ----sim----phone num-----
+
+Hardware understand to the only for binary language its means low level lanugae {0s and 1s}
+
+users understand to the only for the higer leval laguage nothing english
+
+what is os{kernal}?
+os [operating system}----understanding is high level laguage to low level laguage
+
+
+what is disk format type ?
+Nfs/fat32
+
+hard disk --block storage------blol
+google drive ---object storage
+
+
+hardare 
+
+
+laptop ----ethoip--niccard-----os ---ip---laptop
+
+
+source ------destination
+client------server
+
+
+client will given to request server will be given to the response.
+
+data types :
+============
+static data 
+dynamic data 
+
+DNS----Domain name services another name is called route 53
+
+
+ip address two tyoes 
+
+ipv4---0.0.0.0 ----255.255.255.255 ---32 bit
+ipv6---alphanumerical--128 bit
+
+application 
+internet
+intranet--private
+
+
+
+isp ---two types---interne serviece provide 
+
+
+
+NSLOOKUP --- host or dig 
+
+
+https://www.google.com/
+
+
+
+http---80
+https--443
+
+
+
+
+type of ip address
+==================
+class first octet value subnet mask 
+
+a     0-127            8
+b     128-191         16
+c      192-223        24
+d       224--239
+e        240-255      
+
+ncpa.cpl-----------network control panel adpater  control panel limttaion
+
+
+
+
+ncpa.cpl
+
+IAM---IDENTITY ACCESS MANAGEMENT
+
+
+iam stands for identity access management
+IAM is a Global service
+IAM users will be managed by admin
+IAM is one of the managed service
+we can create the user,groups,rolesand we can provide the permission/polices to them
+IAM is authentication {level of login} & authrisation[level of access]
+
+Alies name used by Iam users,but not root users
+
+
+Users:
+=====
+
+arn:aws:iam::237877618143:user/ram
+
+amazon resource name 
+
+arn:aws:servicename:accountnumber:user
+
+
+
+
+
+
+
+
+
+
+
+
+
+IAM user arn
 
 
 
